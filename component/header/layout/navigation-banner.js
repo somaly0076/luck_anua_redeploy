@@ -8,7 +8,6 @@ export function createNavigationBanner(){
 
     };
 
-
     const iconMenuLeft = `
         <div class="col-sm icon-menu-left">
             <div class="banner-label sidebar-menu-label">

@@ -48,7 +48,7 @@ export function createMainMenu(offcanvasItems) {
 
             <ul class="login-logo">
                 <li>
-                    <a href="sing-in.html"><img src="./icon/person.icon.svg" alt=""></a>
+                    <a href="sing-in.html"><img src="./assets/icon/person.icon.svg" alt=""></a>
                     <p><a href="singin.html">LOGIN</a></p>
                 </li>
             </ul>

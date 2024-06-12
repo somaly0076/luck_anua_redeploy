@@ -1,7 +1,7 @@
 export function createPromotionBanner(){
     const icons = {
-        leftChevron     : {path:`/assets/icon/chevron-left.svg`   , alt:`left chevron`},
-        rightChevron    : {path:`/assets/icon/chevron-right.svg`  , alt:`right chevron`}
+        leftChevron     : {path:`./assets/icon/chevron-left.svg`   , alt:`left chevron`},
+        rightChevron    : {path:`./assets/icon/chevron-right.svg`  , alt:`right chevron`}
     }
 
     const promotionBannerHTML = `
