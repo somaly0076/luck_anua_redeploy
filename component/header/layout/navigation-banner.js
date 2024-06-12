@@ -1,10 +1,10 @@
 export function createNavigationBanner(){
     const icons = {
-      toggler   : { path: `/assets/icon/toggler.svg`        , alt: `side menu toggler` },
-      logo      : { path: `/assets/icon/logo.svg`           , alt: `anua logo` },
-      person    : { path: `/assets/icon/person-icon.svg`    , alt: `sign in`    , referal : `sign-in.html`},
-      search    : { path: `/assets/icon/search-icon.svg`    , alt: `search`},
-      bag       : { path: `/assets/icon/bag-icon.svg`       , alt: `cart page` , referal : `cartpage.html`},
+      toggler   : { path: `./assets/icon/toggler.svg`        , alt: `side menu toggler` },
+      logo      : { path: `./assets/icon/logo.svg`           , alt: `anua logo` },
+      person    : { path: `./assets/icon/person-icon.svg`    , alt: `sign in`    , referal : `sign-in.html`},
+      search    : { path: `./assets/icon/search-icon.svg`    , alt: `search`},
+      bag       : { path: `./assets/icon/bag-icon.svg`       , alt: `cart page` , referal : `cartpage.html`},
 
     };
 
