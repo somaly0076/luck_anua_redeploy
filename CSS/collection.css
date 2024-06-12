@@ -1,0 +1,79 @@
+/*---------- style the whole page ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+      font-family: sans-serif;
+      width: 100%;
+      height: 100%;
+  }
+
+/*---------- style on the big container ----------*/
+.album{
+    position: relative;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.album .header-text{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-weight: 350;
+}
+
+/*---------- style on the row  ----------*/
+.row {
+    position: relative;
+    overflow: hidden; 
+    gap : 1.875rem;
+}
+
+/*---------- style on the column ----------*/
+.col {
+    position: relative; 
+    top: 0;
+    bottom: 0; 
+}
+
+/*---------- style on the text ----------*/
+.h1-size{
+    color: rgb(254, 254, 254);
+    z-index: 20;
+}
+
+/*---------- style on the letters on the img ----------*/
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+/*---------- style on the img ----------*/
+.float-img::before{
+    content: '';
+}
+
+/*---------- style on the row  ----------*/
+.row-cols-lg-3 .col{
+    width: 30%;
+}
+
+/*---------- responsive  ----------*/
+@media screen and (max-width: 1150px) {
+    .row-cols-md-2 .col{
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row-cols-1 .col{
+        width: 100%;
+    }
+}

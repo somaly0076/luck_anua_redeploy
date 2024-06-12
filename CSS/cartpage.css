@@ -1,0 +1,24 @@
+ /*---------- start empty cart container----------*/ 
+.outer-cart{
+    display: grid;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      align-content: center;
+      overflow-wrap: anywhere;
+  }
+   /*---------- Adding padding in the cart text----------*/ 
+  .inner-cart{
+    padding: 200px 0px;
+    overflow-wrap: anywhere;
+  }
+  .inner-cart p{
+    margin-top: 20px;
+  }
+  .inner-cart h4{
+      line-height: 1.6;
+
+    }
+
+        
+

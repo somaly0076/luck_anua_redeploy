@@ -1,0 +1,259 @@
+/* //--------- global ---------*/
+*{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*{
+    font-family:Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+}
+
+
+.card-section {
+    background-color: white;
+    }
+    .card-section .card {
+    border: none !important;
+    }
+    
+ 
+
+
+/* //--------- product info ---------*/
+    .product-info {
+    a{
+        color: gray;
+    }
+    }
+    .product-info p {
+    font-weight: 600;
+    }
+    .product-info .price p {
+    font-weight: 100;
+    }
+    .product-info .rate a {
+    font-weight: 100;
+    }
+    .product-info .rating {
+    display: flex;
+    flex-direction: row;
+    }
+    .product-info .rating .rate {
+    margin-left: 5px;
+    }
+
+
+    /* //--------- sub-header ---------*/
+    sub-header{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgb(197, 195, 195);
+        border-bottom: 1px solid rgb(197, 195, 195);
+        .box{
+            padding: 10px 20px 10px 20px;
+        }
+        .sorter{
+            border-left: 1px solid rgb(197, 195, 195);
+            padding: 10px 20px 10px 20px;
+        }
+    }
+    sub-header {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white ; 
+    height: 100%;
+    padding: 0;
+    }
+    sub-header .box {
+    display: flex;
+    }
+    sub-header .box .four-box {
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    }
+    sub-header .box .six-box {
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    }
+    sub-header .sorter {
+    display: flex;
+    }
+    sub-header .sorter .sort {
+    margin-right: 5px;
+    cursor: pointer;
+    }
+    .sorter * {
+        font-size: .7rem;
+    }
+    
+    
+    /* //--------- button (box) ---------*/
+    .box {
+    padding-left: 20px;
+    }
+    .box .burger {
+    padding-left: 10px;
+    }
+    .box .six-box {
+    padding-left: 5px;
+    }
+    
+    .box :hover {
+    color: gray;
+    }
+    
+    .burger {
+    cursor: pointer;
+    }
+    .one-box{
+        cursor: pointer;
+    }
+    .card {
+    cursor: pointer;
+    }
+
+    /* //--------- animation ---------*/
+    @keyframes slide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+    }
+    .fourth-order {
+        display: flex ;
+        animation: slide 1s ease-in-out;
+        animation-play-state: running;
+        transform: translateZ(0);
+        }
+
+/* hover effects for cards */
+    .card > .card-img-top {
+    z-index: 1;
+    }
+    
+    .card.card-img-buttom {
+    position: absolute;
+    display: block;
+    }
+    
+    .card > .card-img-buttom {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    }
+    
+    .card:hover > .card-img-top {
+    opacity: 0;
+    }
+
+    /* //--------- image property ---------*/
+    img {
+    max-width: 100%;
+    }
+    img .card-img-buttom {
+    width: 400px !important;
+    }
+    img .card-img-top {
+    width: 400px !important;
+    }
+
+    /* hover effect for cards ends here */
+    .py-5 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    }
+    
+    
+    .first-order {
+    display: flex;
+    animation: slide .5s ease-out;
+    animation-play-state: running;
+    }
+/* //--------- intializing hidden class ---------*/
+    .first-order.hidden {
+    display: none;
+    }
+    
+    .second-order {
+    display: flex;
+    animation: slide .5s ease-out;
+    }
+    
+    .second-order.hidden {
+    display: none;
+    }
+    
+    .third-order {
+    display: flex;
+    animation: slide .5s ease;
+    animation-play-state: running;
+    }
+    
+    .third-order.hidden {
+    display: none;
+    }
+
+/* //--------- hide product info on mobile ---------*/
+    .third-order .product-info {
+    display: none;
+    }
+
+
+        
+        .fourth-order.hidden {
+        display: none;
+        }
+        /* //--------- hide fourth order button when on desktop ---------*/
+.one-box{
+    display: none;}
+
+
+/* //--------- page responsiveness (subheader) ---------*/
+    @media screen and (max-width: 768px) {
+    .third-order .product-info {
+        display: block;
+    }
+    .box{
+        border-left: 1px solid rgb(197, 195, 195);
+        padding: 10px 20px 10px 20px;
+    }
+    .sorter{
+        border-right: 1px solid rgb(197, 195, 195);
+        padding: 10px 20px 10px 20px;
+    }
+
+    .sorter .drop-down button{
+        font-size: small;
+    }
+    sub-header{
+        flex-direction: row-reverse;
+        
+        .six-box{
+            display: none;
+        }
+        .burger{
+            display: none;
+        }
+        .one-box{
+            display: block;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+
+
+.price p{
+    color: rgba(28, 28,28,0.6);
+}
+

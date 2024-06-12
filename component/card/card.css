@@ -1,0 +1,67 @@
+   /* --------------- CARD ---------------- */
+    /* hover effects for cards */
+    .cus-card {
+      position: relative;
+      /* max-width: 400px; */
+      cursor: pointer;
+    }
+
+    /* image container */
+    .cus-card .image {
+      width: 100%;
+    }
+
+    /* default image */
+    .cus-card .img-top {
+      z-index: 10;
+      position: relative;
+      width: 100%;
+    }
+    
+    /* hide image when hovered */
+    .cus-card:hover .img-top {
+      opacity: 0;
+    }
+
+    /* hover image */
+    .cus-card img.img-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      opacity: 1;
+      transition: opacity 0.1s ease-in-out;
+      -moz-transition: opacity 0.2s ease-in-out;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      width: 100% !important;
+      object-fit: cover;
+    }
+
+    /* card badge */
+    .cus-card .badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 11;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 4px;
+    }
+
+    .cus-card .badge .label, .cus-card .badge .available {
+      text-transform: uppercase;
+      padding: 2px 4px;
+      font-size: 0.7rem;
+    }
+
+    .cus-card .badge .label {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .cus-card .badge .available {
+      background-color: #ccc;
+      color: #000;
+    }
+    /* ------------- END CARD ---------------- */

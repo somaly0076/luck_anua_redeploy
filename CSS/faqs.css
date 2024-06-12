@@ -1,0 +1,57 @@
+
+/*---------- font family for the faq page ----------*/
+.main-section p {
+    font-family: “Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif”;
+    font-size: 1;
+}
+/*---------- H1 font size ----------*/
+#faq-second-line {
+    font-size: 30px;
+    /* Smooth transition for font size changes */
+    transition: font-size 0.3s ease; 
+}
+/*---------- set position for faq(header of faq page) ----------*/
+
+.faq {
+    margin-bottom: 12px;
+}
+/*---------- max width faq-content ----------*/
+.faq-content {
+    max-width: 750px; 
+    margin: 0 auto; 
+}
+
+
+/*---------- padding container ----------*/
+
+
+/*---------- title of each section of accordion ----------*/
+
+.order {
+    display: flex;
+    border-bottom: 1px solid #CCCC;
+    padding-top: 20px;
+    
+}
+/*---------- font size title of each section of accordion ----------*/
+
+.order p{
+    font-size: 18.8px;
+}
+/*---------- img infront of the title of each section of accordion ----------*/
+
+.order-img {
+    margin-right: 10px;
+    
+}
+
+/*---------- Media query for screens smaller than 600px for h1 ----------*/
+
+@media (max-width: 600px) and (max-width:900px) {
+    #faq-second-line {
+        font-size: 20px; 
+    }
+}
+
+
+

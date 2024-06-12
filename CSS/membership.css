@@ -1,0 +1,660 @@
+
+/*---------- linking font files to this css ----------*/
+@font-face {
+    font-family: "Helvetica-N7";
+    src: url(/fonts/Helvetica-N7.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica-N4";
+    src: url(/fonts/Helvetica-N4.ttf);
+}
+
+/*---------- some default adjustments ----------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* body */
+/* hero section */
+/* img adjustment */
+.hero-section {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.hero-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+img.hero-img-large {
+    /* hiding large img */
+    display: none; 
+}
+
+.hero-section .hero-img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+/*---------- text container over the hero section ----------*/
+.text-container {
+    position: absolute;
+    left: 6%;
+    top: 35%;
+    text-align: left;
+    height: 91px;
+    max-width: 680px;
+}
+
+.text-container p {
+    letter-spacing: -0.24px;
+    font-family: "Helvetica-N7", sans-serif;
+    height: 99%;
+    width: 80%;
+}
+/*---------- spacing section: about brand ----------*/
+.spacing-section {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    /* padding: 40px 0px; */
+}
+
+.text-container-spacing-section {
+    position: absolute;
+    height: 68px;
+    width: 148px;
+    text-align: left;
+    left: 6%;
+}
+
+.text-container-spacing-section #brand-story {
+    font-size: 90%;
+    opacity: 0.6;
+    font-family: "Hevetica-N4", sans-serif;
+    margin-bottom: 30px;
+    font-size: 13.2px;
+}
+
+.text-container-spacing-section p {
+    font-size: 20.3px;
+    font-family: "Hevetica-N7", sans-serif;
+    width: 100%;
+}
+
+/*---------- additional spacing ----------*/
+div#spacing {
+    position: absolute;
+    width: 100%;
+    top: 85%;
+}
+
+@media (min-width: 700px) {
+    div#spacing p {
+        /* appear in a bigger screen */
+        display: none;
+        border-bottom: 1px solid #ccc;
+    }
+}
+/*---------- brand story description ----------*/
+.text-container-description {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    max-height: 255px;
+    padding-top: 0 !important;
+}
+/*---------- brand story description text wrapper ----------*/
+.wrapper {
+    position: absolute;
+    left: 6%;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 69%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .wrapper-paragraph {
+    min-width: 372px;
+    max-width: 680px;
+    min-height: 174px;
+    max-height: 95px;
+}
+
+.wrapper-paragraph #first-p, #second-p {
+    letter-spacing: -0.24px;
+    opacity: 0.7;
+    font-family: "Helvetica-N4";
+    font-size: 14px;
+}
+
+.wrapper-paragraph #second-p {
+    margin: 20px 0px 0px;
+}
+/*----------  below the product section ----------*/
+
+.grid-section {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 515px fit-content 515px fit-content;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 1px solid #ccc;
+}
+/*----------  grid section ----------*/
+
+.grid-1, .grid-3 {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-1 img, .grid-3 img {
+    max-width: 100%;
+    object-fit: cover;
+}
+/*----------  text----------*/
+
+.grid-2, .grid-4, .below-grid-text {
+    width: 100%;
+    margin: 24px 0px;
+    padding: 0px 20px;
+}
+
+.wrapper-paragraph1 {
+    width: 100%;
+    height: 100%;
+}
+
+.heading-p {
+    height: fit-content;
+    font-family: "Helvetica-N7";
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.heading-p strong {
+    width: 100%;
+    height: 100%;
+}
+
+.text-wrapper {
+    margin: 16px 0px 0px 0px;
+    font-family: "Helvetica-N4";
+    opacity: 0.7;
+    font-size: 14px;
+    align-items: center;
+}
+
+.description-2 {
+    margin: 16px 0px 0px 0px;
+    align-items: center;
+    justify-self: center;
+}
+/* to here */
+/*----------  marking the end of grid section ----------*/
+/* ************************************************************************************* */
+
+
+.below-grid-text {
+    position: relative;
+    top: 2%;
+    left: 6%;
+    height: 198px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.below-grid-text .wrapper-paragraph1 {
+    width: 90%;
+}
+
+.below-grid-text .wrapper-paragraph1 #heading-p {
+    height: 31px;
+}
+/*----------  carousel slider ----------*/
+.carousel-section {
+    display: flex;
+    width: 100%;
+    height: 243px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0 !important;
+}
+
+.carousel-container {
+    width: 90%;
+    height: 100%;
+}
+
+.earth-img {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.earth-img i {
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.carousel-body {
+    text-align: center;
+    padding: 0px 0px 40px;
+}
+
+p.wrapped-strong {
+    font-family: "Helvetica-N7", sans-serif;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+p.p2 {
+    margin: 16px 0px 0px;
+}
+
+p.p1, p.p2 {
+    font-family: "Helvetica-N4", sans-serif;
+    font-size: 14px;
+    opacity: 0.6;
+    text-align: center;
+    justify-content: center;
+}
+/*----------  navigation dots ----------*/
+.navigation-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot {
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.4;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+.navigation-dot .dot {
+    width: 6px;
+    height: 6px;
+}
+
+@media screen and (max-width: 700px) {
+    /* hidden card for javascript */
+    .my-card.hidden {
+        display: none;
+    }
+
+    .sustainability-img, .earth-img, .study-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-3 {
+        height: 237px;
+    }
+}
+/*----------  sign-up-section ----------*/
+
+.sign-up-section {
+    display: flex;
+    width: 100%;
+    height: 115px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapped-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 31px;
+    font-size: 24.47px;
+    font-family: "Helvetica-N7", sans-serif;
+}
+
+.space {
+    margin-right: 5px;
+}
+
+.sign-up a {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*----------  another section below it ----------*/
+.universe-section {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+.constained-img, .text-below-logo {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-below-logo {
+    padding: 16px 0px 0px;
+    font-family: "Helvetica-N7", sans-serif;
+    font-size: 20px;
+}
+
+.constained-img img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*----------  media queries, styles applied to bigger screen ----------*/
+@media (min-width: 701px) {
+    img.anua-logo {
+        height: 40px;
+        width: 140px;
+    }
+
+    /* hero section */
+    .text-container {
+        display: flex;
+        align-items: center;
+        height: 89px;
+    }
+    
+    .text-container p {
+        letter-spacing: -0.24px;
+        /* will adjust in media queries to 32px */
+        font-size: 35.4px;
+        font-family: 'Helvetica-N7', sans-serif;
+        height: 99%;
+        width: 90%;
+    }
+/*----------  hero section ----------*/
+
+    .hero-section {
+        height: 80vh;
+        /* max-height: 780px; */
+    }
+    div.hero-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    img.hero-img-small {
+        display: none;
+    }
+
+    img.hero-img-large {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+        max-height: 100%;
+    }
+/*----------  text over hero ----------*/
+
+    /* about section */
+    .spacing-section {
+        height: 283px;
+    }
+
+    .text-container-spacing-section {
+        width: 204px;
+        height: 74px;
+    }
+
+    .text-container-spacing-section #brand-story {
+        height: 23px;
+    }
+    
+    .text-container-spacing-section p {
+        height: 38px;
+    }
+    
+    .text-container-spacing-section p strong {
+        font-size: 29.8px;
+    }
+/*----------  spacing line ----------*/
+    #spacing {
+        display:block;
+    }
+
+    #spacing p {
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* brand story description */
+    .text-container-description {
+        height: 255px;
+        padding-top: 0 !important;
+    }
+
+    .wrapper {
+        width: 680px;
+        height: 144px;
+    }
+
+    #first-p, #second-p {
+        width: 100%;
+        height: 40.5px;
+    }
+
+    #second-p {
+        height: 74.25px;
+    }
+
+    #second-p p {
+        margin: 20px 0px 0px;
+    }
+
+    .wrapper-paragraph {
+        max-height: 143.75px;
+        min-height: 95px;
+    }
+
+    /* grid section */
+    .grid-section {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50vw);
+        align-items: center;
+    }
+
+    /* grid img */
+    .grid-1, .grid-3 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .grid-1 img, .grid-3 img {
+        min-width: 100%;
+        object-fit: cover;
+        max-height: 100%;
+    }
+    
+    /* grid text */
+    .grid-2, .grid-4 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-4 {
+        justify-content: end;
+    }
+
+    .grid-2.wrapper1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-4 .wrapper-paragraph1 {
+        padding: 0px 96px;
+    }
+    
+    .grid-2 .wrapper-paragraph1, .grid-4 .wrapper-paragraph1 {
+        width: 90%;
+        height: 50%;
+        padding: 0px 48px 0px 96px;
+        margin: 24px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-wrapper {
+        margin: 20px 0px 0px;
+        font-size: 15px;
+        width: 90%;
+        height: fit-content;
+        opacity: 0.7;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    p.heading-p {
+        height: fit-content;
+        width: 90%;
+        /* width: max-content;
+        height: max-content; */
+        font-family: "Helvetica-N7", sans-serif;
+        font-size: 34.9px;
+        text-align: left;
+        margin-bottom: 10px 0px;
+    }
+
+    .heading-p strong {
+        width: 100%;
+        height: 100%;
+    }
+
+    .description-1, .description-2 {
+        text-align: left;
+        height: 100%;
+        width: 100%;
+    }
+        
+    .description-2 {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .grid-4 {
+        margin: 0;
+        padding: 0;
+    }
+/*----------  swap from 4th to 3rd  ----------*/
+
+    .grid-3 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+/*----------  our proficiencies  ----------*/
+
+    /* carousel */
+
+    .carousel-section {
+        height: 374px;
+        padding: 0px 0px 64px 0px;
+    }
+
+    .carousel-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 65%;
+        height: 100%;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .earth-img, .study-img, .sustainability-img {
+        text-align: left;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .earth-img i, .study-img i, .sustainability-img i {
+        font-size: 24px;
+        opacity: 0.6;
+    }
+
+    .carousel-body {
+        padding: 0;
+        width: 100%;
+        height: 354px;
+    }
+
+    .wrapped-strong {
+        font-family: "Helvetica-N7", sans-serif;
+        font-size: 24.2px;
+        text-align: left;
+    }
+
+    .carousel-body p.p1, .carousel-body p.p2 {
+        font-family: "Helvetica-N4", sans-serif;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    /* navigation dots */
+    .navigation-dot {
+        display: none;
+    }
+
+    /* sign up section */
+    .sign-up-section {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 64px 0px;
+        height: 160px;
+    }
+
+    .sign-up-section .sign-up, .sign-up-section .here {
+        font-size: 30.8px;
+    }
+
+    /* above footer */
+    .universe-section {
+        height: 286px;
+    }
+    .universe-section strong {
+        font-size: 24.2px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .carousel-container {
+        width: 90%;
+    }
+}
+/*----------   marking the end!  ----------*/
+/* ************************************************************************************* */

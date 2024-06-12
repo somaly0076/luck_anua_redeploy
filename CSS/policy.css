@@ -1,0 +1,15 @@
+
+/*----------Here is italic style for all tables. ----------*/
+td{
+    font-style: italic;
+    font-weight: 200;
+}
+
+/*---------- Here is the styling for title. ----------*/
+.title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300
+}
+
+

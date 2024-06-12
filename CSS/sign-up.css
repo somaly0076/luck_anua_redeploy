@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(/fonts/HelveticaNeueMedium.otf);
+}
+
+@font-face {
+    font-family: "Helvetica Neue Black";
+    src: url(/fonts/HelveticaNeueBlack.otf);
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(/fonts/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica Bold";
+    src: url(/fonts/Helvetica-Bold.ttf);
+}
+/*----------  Start login area ----------*/
+.login{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    max-width: 440px;
+    /* height: 100vh; */
+    margin: 0 auto 0 auto;
+    
+    }
+    .login-wrapper{
+        padding-top: 100px ;
+        /* padding-bottom:100px */
+    }
+    
+    .login-box {
+        width: 40px;
+        /* padding: 30px; */
+        background-color: white;
+        border-radius: none;
+        
+        
+    }
+    
+    .Sign-up-header {
+        text-align: center;
+        /* margin-bottom: 20px 0 40px 0; */
+    }
+    
+    .Sign-up-header header {
+        color: #333;
+        font-size: 27px;
+        font-weight: 60;
+        
+        
+    }
+    /*----------  End login area ----------*/
+
+    /*----------  Start input style ----------*/
+    .input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #input-field-id{
+    margin-bottom: 10px;
+    }
+    .input-box{
+        display: flex;
+        padding: 10px 0 10px 0;
+        position: relative;
+        align-items: center;
+        
+    }
+    .input-box input{
+        padding: 10.4px 12.8px;
+
+    }
+    
+    .input-field {
+        width: 100%; /* Set the width to 100% to make it responsive */
+        max-width: 500px; /* Set a maximum width to prevent it from becoming too wide */
+        /* padding: 10px; */
+        font-size: 15px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+    
+    .input-suffix {
+        position:absolute;
+        right: 0; /* Position it just outside the input */
+        top: 50%;
+        transform: translateY(-80%);
+        padding-right: 10px;
+        color: gray;
+        opacity: 1; 
+        cursor: pointer;
+        transition: opacity 0.3s ease; 
+    }
+    .input-suffix a{
+        color: rgb(138, 133, 133);
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .input-field:focus + .input-suffix {
+        opacity: 0; /* Fades away when input is focused */
+    }
+    
+    .submit-btn:hover {
+        background-color: #222;
+    }
+    
+    #account{
+        display: flex;
+        justify-content: center;
+        padding:25px 0 20px 0;
+        color: gray;
+        font-size: 15px;
+    }
+    #account a{
+        color: gray;
+        margin-left: 5px;
+    }
+    
+/*----------  End input style ----------*/
+
+/*----------  Start icon style ----------*/
+    .icon-singup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-up-link-a{
+        margin: 60px;
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        justify-content: center;
+    }
+
+    .divider {
+        text-align: center;
+        margin: 5px 0 10px 0;
+        position: relative;
+    }
+    
+    .divider::before,
+    .divider::after {
+        content: "";
+        display: inline-block;
+        width: 250%;
+        border-top: 1px solid #000;
+        position: absolute;
+        top: 50%;
+    }
+    
+    .divider::before {
+        right: calc(80% + 10px);
+    }
+    
+    .divider::after {
+        left: calc(80% + 10px);
+    }
+    
+    .divider-text {
+        background-color: #fff;
+        padding: 0 10px;
+    }
+    
+    .login-link-a svg:hover{
+        background-color: lightgray;
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+/*----------  End icon style ----------*/
+    @media (max-width:440px) and (min-width:200px) {
+            .login{
+                margin-left: 5%;
+                margin-right:5% ;
+            }
+        
+    }
+    @media (max-width){
+        .login{
+            padding: 0 10px;
+        }
+    }
+    

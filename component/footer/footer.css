@@ -1,0 +1,120 @@
+/*---------- start footer container ----------*/
+    .inner-footer{
+        display: grid;
+        row-gap: 3rem;
+    }
+    .inner-block{
+      justify-content: space-between;
+      flex-wrap: wrap;
+      display: flex;
+        gap: 2.5rem; 
+    }
+    .inner-stack{
+        row-gap: 1rem;
+        align-content: start;
+        display: grid;
+        max-width: 18rem;
+    }
+    /*---------- address margin top on logo image ----------*/
+  .inner-stack img{
+    margin-top: 10px;
+}
+
+  /*---------- style on list element ----------*/
+    .list-style{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  
+  }
+  .list-style li a{
+      color: #1C1C1CA6;
+      font-size: 15px;
+      text-decoration: none;
+  }
+  .list-style > li{
+      margin-top: 0.625rem;
+  }
+  .inner-stack .list-style a:hover{
+    color: black;
+  }
+
+  @media screen and (max-width: 700px) {
+    .list-style{
+        margin-top: 2.5rem;
+    }
+      .inner-block{
+      display: block;
+  }
+  .inner-stack img{
+    margin-top: 3rem;
+}
+.list-style li a{
+  font-size: 14px;
+}
+  }
+
+
+
+/*---------- style on form section ----------*/
+  .form{
+    display: grid;
+    row-gap: 1.25rem;
+    align-content: start;
+    min-width: 330px;
+  }
+  .form input{
+    padding: 10.4px 12.8px;
+  }
+  @media screen and (max-width:400px) {
+    .form{
+      min-width: auto;
+    }
+  }
+
+/*---------- style on social icon section ----------*/
+    .icon-footer svg{
+        margin: .75rem;
+        fill: gray;
+    }
+    .icon-footer a{
+      text-decoration: none;
+    }
+    .icon-footer svg:hover{
+      fill: black;
+      
+    }
+  /*---------- set font size in the lowest section ----------*/
+    .sub-footer{
+        font-size: 11px ;
+    
+    }
+    @media screen and (max-width: 700px) {
+        .sub-footer{
+            text-align: center;
+    }
+    }
+
+  #footer-uper-email{
+  color: #1C1C1CA6;
+  }
+
+  /*---------- style on fix black anua logo ----------*/
+    .fix-logo{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: end;
+    
+    }
+    .fix-logo button{
+      width:50px;
+      height: 50px;
+      background-color: black;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin: 10px;
+      z-index: 1000;
+    }
+   
